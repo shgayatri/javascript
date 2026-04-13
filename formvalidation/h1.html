@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Form Validator</h2>
+
+    <form autocomplete="off" id="form">
+
+        <!-- Name -->
+        <input type="text" id="name" placeholder="Enter name">
+        <small id="nameError">Name must be at least 3 characters</small>
+
+        <!-- Email -->
+        <input type="text" id="email" placeholder="Enter email">
+        <small id="emailError">Enter a valid email</small>
+
+        <!-- Password -->
+        <input type="password" id="password" placeholder="Enter password">
+        <small id="passwordError">
+            Password must have 1 uppercase, 1 lowercase, 1 number
+        </small>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+<script src="scrip.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #main{
+            background-color:lightblue;
+            width:400px;
+            min-height:400px;   /* fixed */
+            display:flex;
+            flex-direction:column;  /* important */
+            align-items:center;
+            gap:20px;
+            padding:20px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+
+        img{
+            height:100px;
+            width:100px;
+            border-radius:50%;
+        }
+
+        .card{
+            width:250px;
+            background-color:lightgreen;
+            padding:10px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <form>
+            <input type="text" placeholder="img url">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+            <input type="text" placeholder="age">
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <script src="scripi.js"></script>
+
+</body>
+</html>
