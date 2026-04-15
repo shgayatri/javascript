@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  transition: 0.4s;
+}
+
+/* Light Theme */
+.light {
+  background: #ffffff;
+  color: #000;
+}
+
+/* Dark Theme */
+.dark {
+  background: #121212;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
