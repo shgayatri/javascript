@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Call</title>
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>New Call</h2>
+
+  <!-- ERROR MESSAGE -->
+  <p id="error" style="color:red;"></p>
+
+  <label>Image URL</label>
+  <input id="img" type="text" placeholder="https://example.com/image.jpg">
+
+  <label>Full Name</label>
+  <input id="name" type="text" placeholder="Enter full name">
+
+  <label>Home Town</label>
+  <input id="town" type="text" placeholder="Enter home town">
+
+  <label>Purpose</label>
+  <input id="purpose" type="text" placeholder="e.g. Quick appointment note">
+
+  <label>Category</label>
+  <div class="radio-group">
+    <label><input type="radio" name="cat" value="Emergency"> Emergency</label>
+    <label><input type="radio" name="cat" value="Important"> Important</label>
+    <label><input type="radio" name="cat" value="Urgent"> Urgent</label>
+    <label><input type="radio" name="cat" value="No Rush"> No Rush</label>
+  </div>
+
+  <!-- BUTTON FIX -->
+  <button onclick="createNote()">Create Note</button>
+</div>
+
+<!-- NOTES DISPLAY -->
+<div id="notes"></div>
+
+<script src="sc.js"></script>
+</body>
+</html>
