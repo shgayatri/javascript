@@ -38,7 +38,7 @@ function createToaster(config) {
 
     let div = document.createElement("div");
     div.textContent = str;
-
+ 
     div.className = `inline-block ${
       config.theme === "dark"
         ? "bg-gray-800 text-white"

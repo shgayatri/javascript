@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Manager</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#f3f4f6;
+      padding:20px;
+    }
+
+    form{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+      width:300px;
+      margin:auto;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:8px;
+      margin:8px 0;
+    }
+
+    button{
+      width:100%;
+      padding:10px;
+      background:#2563eb;
+      color:white;
+      border:none;
+      cursor:pointer;
+    }
+
+    #container{
+      margin-top:20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      align-items:center;
+    }
+
+    .card{
+      background:white;
+      padding:10px;
+      border-radius:10px;
+      width:300px;
+      box-shadow:0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+  </style>
+
+</head>
+<body>
+
+  <form>
+    <h2>Add User</h2>
+
+    <input type="text" id="name" placeholder="Enter Name">
+
+    <input type="text" id="role" placeholder="Enter Role">
+
+    <textarea id="bio" placeholder="Enter Bio"></textarea>
+
+    <input type="text" id="photo" placeholder="Photo URL">
+
+    <button type="submit">Add User</button>
+  </form>
+
+  <!-- 🔥 cards yaha aayenge -->
+  <div id="container"></div>
+
+  <script src="sc.js"></script>
+
+</body>
+</html>
